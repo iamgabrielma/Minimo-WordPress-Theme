@@ -18,7 +18,7 @@ add_action('add_meta_boxes', 'awp_gma_create_image_metabox');
 function awp_gma_create_image_metabox_cb($post) {
     
 	// load the metadata is exists
-	$awp_gma_image_meta = get_post_meta( $post->ID, '_awp_gma_image_meta', true );
+	$awp_gma_image_meta = get_post_meta( $post->ID, 'awp_gma_image_meta', true );
 
     ?>
     Image
@@ -40,7 +40,9 @@ function awp_gma_save_image_metabox($post_id){
 		// save the metadata
 		//update_post_meta( $post_id, $meta_key, $meta_value, $prev_value );
 		// esc_url_raw sanitizes the url
-		update_post_meta( $post_id, 'awp_gma_image_meta', esc_url_raw( $_POST['awp_gma_image_meta'] ));
+		//var_dump($_POST['awp_gma_image_meta']);
+		update_post_meta( $post_id, 'awp_gma_image_meta', esc_url_raw($_POST['awp_gma_image_meta']) );
+
 
 	}
 
