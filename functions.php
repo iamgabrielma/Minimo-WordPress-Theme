@@ -6,10 +6,16 @@
  *
  * @package Minimo
  */
+
+/* ADDING CUSTOM POST tube TYPE*/
+
+
 include('inc/theme-options.php');
-include('inc/fonts-selector.php'); //fonts functionality tryout
-include('inc/fonts-selector-two.php'); //fonts functionality tryout
-include('inc/daytime-hello.php');
+include('inc/custom-metaboxes.php');
+//include('inc/fonts-selector.php'); //fonts functionality tryout
+//include('inc/fonts-selector-two.php'); //fonts functionality tryout
+//include('inc/daytime-hello.php');
+//include('inc/deprecated-custom-post-type.php');
 
 if ( ! function_exists( 'minimo_setup' ) ) :
 /**
