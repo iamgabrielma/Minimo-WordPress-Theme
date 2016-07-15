@@ -10,7 +10,7 @@
 /* ADDING CUSTOM POST tube TYPE*/
 
 
-//include('inc/theme-options.php');
+include('inc/theme-options.php');
 include('inc/custom-metaboxes.php');
 //include('inc/fonts-selector.php'); //fonts functionality tryout
 //include('inc/fonts-selector-two.php'); //fonts functionality tryout
