@@ -176,7 +176,10 @@ function minimo_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 828, 360, true );
+	set_post_thumbnail_size( 828, 360, true ); //crop = boolean
+	add_image_size( 'minimo-small-thumb', 300, 150, true );
+	/*
+	using the_post_thumbail() calls set_post_thumbnail_size(), if I call the_post_thumbail('minimo-small-thumb') instead, I will get the other one*/
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
