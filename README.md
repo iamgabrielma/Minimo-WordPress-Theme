@@ -1,6 +1,11 @@
 # Minimo
 Minimo is an accessible content-first theme built around beautiful fonts and lots of white space designed and developed by [Gabriel Maldonado Almendra](http://almondwp.com)
+
+Minimo Theme is based on [_]s(http://underscores.me).
+
 ## Features
+Mobile-first responsive design.
+Custom pages for custom templates.
 
 ### Article Decks
 To display an article deck (short one-paragraph synopsis displayed after post title, but before post meta), add a custom excerpt to the post.
