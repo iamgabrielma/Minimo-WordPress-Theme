@@ -37,7 +37,7 @@
 		
 		?>
 
-		<?php
+		<?php //does exist the exceprt? get it.
 		if ( has_excerpt( $post->ID ) ) {
 			echo '<div class="deck">';
 			echo '<p>' . get_the_excerpt() . '</p>';

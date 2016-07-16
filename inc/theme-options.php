@@ -11,6 +11,13 @@ $options = array(
 		"parent" => "analytics-setup",
 		"std" => ""
 	),
+	array("name" => "Custom SEO Metadata on header",
+		"desc" => "Enter your code here for SEO",
+		"id" => $shortname."_custom_seo_code",
+		"type" => "textarea",
+		"parent" => "seo-setup",
+		"std" => ""
+	),
 	array(
 		"name" => 'Fonts',
 		"desc" => "Use the form below to change fonts of your theme.",

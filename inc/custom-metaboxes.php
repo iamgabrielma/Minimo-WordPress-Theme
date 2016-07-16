@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Minimo Theme Customizer.
+ *
+ * @package Minimo
+ */
+
+/**
+ * Adds metaboxes to post for tube functionalities.
+ *
+ * 
+ */
+
 /* Create the meta box on new post */
 function awp_gma_create_image_metabox() {
    

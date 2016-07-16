@@ -396,7 +396,7 @@ blockquote {
     margin: 1.5em 0 1.5em 2em;
     position: relative;
 }
-
+/* before the blockquote we take the fontawesome code */
 blockquote::before {
     font-family: 'FontAwesome';
     content: "\f10d";

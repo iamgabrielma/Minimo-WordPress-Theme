@@ -24,6 +24,7 @@ get_header(); /* header.php*/?>
 			?>
 			
 			<?php 
+			/* adds new arguments, next_text and prev_text, adding spans to the navigation through posts*/
 			the_post_navigation( array(
 				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'minimo' ) . '</span> ' .
 					'<span class="screen-reader-text">' . __( 'Next post:', 'minimo' ) . '</span> ' .
