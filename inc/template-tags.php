@@ -2,7 +2,6 @@
 /**
  * Custom template tags for this theme.
  *
- * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package Minimo
  */
@@ -34,8 +33,8 @@ function minimo_posted_on() {
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 	
-	// Display the author avatar if the author has a Gravatar
 	$author_id = get_the_author_meta( 'ID' );
+	// Does the author has a gravatar?
 	if ( minimo_validate_gravatar( $author_id ) ) {
 		echo '<div class="meta-content has-avatar">';
 		echo '<div class="author-avatar">' . get_avatar( $author_id ) . '</div>';
@@ -176,7 +175,6 @@ add_action( 'save_post',     'minimo_category_transient_flusher' );
  * Utility function to check if a gravatar exists for a given email or id
  * @param int|string|object $id_or_email A user ID,  email address, or comment object
  * @return bool if the gravatar exists or not
- * Original found at https://gist.github.com/justinph/5197810
  */
 
 function minimo_validate_gravatar($id_or_email) {
@@ -239,7 +237,6 @@ if ( ! function_exists( 'minimo_paging_nav' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
  *
- * @since Twenty Fourteen 1.0
  *
  * @global WP_Query   $wp_query   WordPress Query object.
  * @global WP_Rewrite $wp_rewrite WordPress Rewrite object.

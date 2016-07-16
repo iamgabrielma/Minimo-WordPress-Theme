@@ -6,6 +6,7 @@ Minimo Theme is based on [_s](http://underscores.me).
 ## Features
 Mobile-first responsive design.
 Custom pages for custom templates.
+Gets author WordPress Gravatar
 
 ### Article Decks
 To display an article deck (short one-paragraph synopsis displayed after post title, but before post meta), add a custom excerpt to the post.
