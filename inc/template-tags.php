@@ -225,17 +225,17 @@ function minimo_validate_gravatar($id_or_email) {
 }
 
 /**
- * Customize the excerpt read-more indicator
+ * Customize the excerpt read-more indicator using a simple WP filter, just grab the exceprt and replace for ' ...' why is $more here, where it comes from? is for the filter excerpt_more?
  */
 function minimo_excerpt_more( $more ) {
 	return " …";
 }
 add_filter( 'excerpt_more', 'minimo_excerpt_more' );
 
-
+/* Based on 2014 WP theme */
 if ( ! function_exists( 'minimo_paging_nav' ) ) :
 /**
- * Display navigation to next/previous set of posts when applicable.
+ * Display navigation to next/previous set of posts when applicable. 
  *
  *
  * @global WP_Query   $wp_query   WordPress Query object.

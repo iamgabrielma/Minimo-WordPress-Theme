@@ -1645,7 +1645,7 @@ a:active {
 	position: relative;
 	display: block;
 }
-
+/* font awesome sticky icon */
 .sticky::before {
 	position: absolute;
 	top: -1.5em;

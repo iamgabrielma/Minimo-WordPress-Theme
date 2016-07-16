@@ -5,6 +5,7 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Minimo
+ * @global $first_post
  */
 
 ?>
@@ -14,11 +15,18 @@
 	<header class="entry-header">
 		
 		<?php 
+		/* if thumbnail has been set, post featured image the_post_thumbnail() */
 		if ( has_post_thumbnail() ) { ?>
 			<figure class="featured-image">
 				<?php if ( $first_post == true ) { ?>
 					<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark">
-						<?php the_post_thumbnail(); ?>
+						<?php the_post_thumbnail(); 
+						/* default from the theme, others can be used, like
+						the_post_thumbnail('thumbnail') -> default from wordpress
+						the_post_thumbnail('minimo-small-thumb') -> created on functions.php
+						more custom sizes can be created in functions.php
+						*/
+						?>
 					</a>
 				<?php } else { 
 					the_post_thumbnail(); 
