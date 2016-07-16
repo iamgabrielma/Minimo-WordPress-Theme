@@ -12,6 +12,8 @@
 
 include('inc/theme-options.php');
 include('inc/custom-metaboxes.php');
+
+include('inc/custom-post-format.php');
 //include('inc/fonts-selector.php'); //fonts functionality tryout
 //include('inc/fonts-selector-two.php'); //fonts functionality tryout
 //include('inc/daytime-hello.php');
@@ -158,6 +160,17 @@ function minimo_setup() {
 	 * to change 'minimo' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'minimo', get_template_directory() . '/languages' );
+
+	/*
+	adding custom post format
+	*/
+	// add_post_type_support( 'my_custom_post_type', 'post-formats' );
+	// register_post_type( 'my_custom_post_type',
+ //      array(
+ //        'labels' => array( 'name' => __( 'Products' ) ),
+ //        'public' => true
+ //    	)
+ //  	);
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );

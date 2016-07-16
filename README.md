@@ -15,6 +15,7 @@ Custom thumbnail sizes.
 Article decks.
 Smart 404.
 Integrated pagination.
+Built-in SEO analysis for posts and pages.
 
 ### Article Decks
 To display an article deck (short one-paragraph synopsis displayed after post title, but before post meta), add a custom excerpt to the post.

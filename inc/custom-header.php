@@ -9,6 +9,9 @@
 		<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
 	</a>
 	<?php endif; // End header image check. ?>
+*/
+
+/**
  *
  * @link http://codex.wordpress.org/Custom_Headers
  *
